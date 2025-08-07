@@ -232,11 +232,11 @@ const HeroSection = () => {
             </div>
 
             {/* Enhanced Video Testimonial Preview */}
-            <div className="bg-white rounded-xl shadow-card p-4 sm:p-6 border border-gray-200 animate-slide-up max-w-full">
-              <div className="aspect-square bg-gray-100 rounded-lg mb-4 relative overflow-hidden">
+            {/* <div className="bg-white rounded-xl shadow-card p-4 sm:p-6 border border-gray-200 animate-slide-up max-w-full">
+              <div className="aspect-square bg-gray-100 rounded-lg mb-4 relative overflow-hidden"> */}
                 {/* Removing the rotating border animation */}
-                <img 
-                  src="/Images/proof1.png"
+                {/* <img 
+                  src="/Images/youtube.jpg"
                   alt="Success story testimonial"
                   className="w-full h-full object-contain relative z-10 rounded-lg"
                   loading="lazy"
@@ -253,7 +253,7 @@ const HeroSection = () => {
                 </p>
                 <p className="text-xs text-gray-500">- Rajesh Kumar, Delhi</p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
