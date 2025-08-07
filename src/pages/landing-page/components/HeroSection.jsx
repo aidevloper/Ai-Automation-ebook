@@ -246,7 +246,7 @@ const HeroSection = () => {
                 <div className="absolute inset-1 bg-gray-100 rounded-lg"></div>
                 
                 <img 
-                  src="/Images/youtube.jpg"
+                  src="https://www.etsy.com/in-en/listing/4300831821/how-to-build-a-six-figure-faceless?ls=r&ref=internal_similar_listing_bot-3&dd=1&content_source=9e9941d81f722374de5a25ffdb702190%253A6a0d43ceae74aae501fb181e7ded53fd48af964f&logging_key=9e9941d81f722374de5a25ffdb702190%3A6a0d43ceae74aae501fb181e7ded53fd48af964f&listing_id=4300831821&listing_slug=how-to-build-a-six-figure-faceless"
                   alt="Success story testimonial"
                   className="w-full h-full object-contain relative z-10 rounded-lg"
                   loading="lazy"
