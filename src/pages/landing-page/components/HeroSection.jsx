@@ -234,19 +234,9 @@ const HeroSection = () => {
             {/* Enhanced Video Testimonial Preview */}
             <div className="bg-white rounded-xl shadow-card p-4 sm:p-6 border border-gray-200 animate-slide-up max-w-full">
               <div className="aspect-square bg-gray-100 rounded-lg mb-4 relative overflow-hidden">
-                {/* Rotating Border Animation */}
-                <div 
-                  className="absolute inset-0 rounded-lg" 
-                  style={{ 
-                    animation: 'rotateGradient 3s ease infinite',
-                    background: 'linear-gradient(90deg, #3b82f6, #8b5cf6, #f59e0b, #3b82f6)',
-                    backgroundSize: '300% 300%'
-                  }}
-                ></div>
-                <div className="absolute inset-1 bg-gray-100 rounded-lg"></div>
-                
+                {/* Removing the rotating border animation */}
                 <img 
-                  src="https://www.etsy.com/in-en/listing/4300831821/how-to-build-a-six-figure-faceless?ls=r&ref=internal_similar_listing_bot-3&dd=1&content_source=9e9941d81f722374de5a25ffdb702190%253A6a0d43ceae74aae501fb181e7ded53fd48af964f&logging_key=9e9941d81f722374de5a25ffdb702190%3A6a0d43ceae74aae501fb181e7ded53fd48af964f&listing_id=4300831821&listing_slug=how-to-build-a-six-figure-faceless"
+                  src="/Images/youtube.jpg"
                   alt="Success story testimonial"
                   className="w-full h-full object-contain relative z-10 rounded-lg"
                   loading="lazy"
