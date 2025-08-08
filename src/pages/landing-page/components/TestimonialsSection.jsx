@@ -12,63 +12,63 @@ const TestimonialsSection = () => {
       name: "Rajesh Kumar",
       location: "Delhi",
       avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face",
-      income: "₹1,50,000",
-      timeframe: "First Month",
+      income: "₹11,23,110",
+      timeframe: "65 Days",
       rating: 5,
-      text: `I was skeptical about faceless YouTube channels, but this system completely changed my perspective. Within 30 days, I had 3 videos that went viral and earned my first ₹1,50,000. The AI tools mentioned in the eBook are game-changers!`,
-      videoThumbnail: "Images/proof1.png",
+      text: `I was skeptical about faceless YouTube channels, but this system completely changed my perspective. Within 65 days, I had 6 videos that went viral and earned my first ₹11,23,110. The AI tools mentioned in the eBook are game-changers!`,
+      videoThumbnail: "https://onehourprofessor.b-cdn.net/wp-content/uploads/2021/07/make-money-on-youtube.png",
       channelStats: {
-        subscribers: "45.2K",
-        views: "2.1M",
-        videos: 12
+        subscribers: "65.2K",
+        views: "1.1M",
+        videos: 42
       }
     },
     {
       id: 2,
       name: "Priya Sharma",
       location: "Mumbai",
-      avatar: "Images/priya sharma.jpg",
-      income: "₹2,47,230.60",
+      avatar: "https://t4.ftcdn.net/jpg/05/70/57/47/360_F_570574724_HWfki1q3XZt9WzVlCcQujOV5Jxe8UBG1.jpg",
+      income: "₹4,57,988.60",
       timeframe: "One Month",
       rating: 5,
       text: `As a working mother, I needed something that wouldn't take away time from my family. This AI-powered approach let me create content during my lunch breaks. I'm now earning more than my full-time job!`,
-      videoThumbnail: "Images/proof2.jpg",
+      videoThumbnail: "https://miro.medium.com/v2/resize:fit:1400/1*LzmRECP0PJGGT4NdC0bHyQ.png",
       channelStats: {
-        subscribers: "78.5K",
-        views: "4.2M",
-        videos: 24
+        subscribers: "36.32K",
+        views: "234.2K",
+        videos: 12
       }
     },
     {
       id: 3,
       name: "Amit Patel",
       location: "Bangalore",
-      avatar: "Images/handsome1.jpg",
-      income: "₹1,09,221",
+      avatar: "https://st4.depositphotos.com/10313122/22316/i/450/depositphotos_223166560-stock-photo-young-handsome-indian-man-against.jpg",
+      income: "₹2,88,006",
       timeframe: "Third Month",
       rating: 5,
       text: `I tried traditional YouTube for 2 years with zero success. This eBook taught me the AI automation secrets that big creators don't want you to know. Now I run 5 profitable channels!`,
-      videoThumbnail: "Images/proof3.png",
+      videoThumbnail: "https://miro.medium.com/v2/resize:fit:1400/1*YbaW9C3BsUCSR4JeqP936A.png",
       channelStats: {
-        subscribers: "156K",
-        views: "8.7M",
-        videos: 45
+        subscribers: "27.3K",
+        views: "129.4K",
+        videos: 18
       }
     },
     {
       id: 4,
       name: "Sneha Gupta",
       location: "Pune",
-      avatar: "Images/Sneha Gupta.jpg",
-      income: "₹3,33,784",
-      timeframe: "30 Days",
+      avatar: "https://t3.ftcdn.net/jpg/06/60/16/72/360_F_660167287_gzYr2ejTMDX1dCyj96YNFb7FiwJZPrvK.jpg",
+      income: "₹14,71,661",
+      timeframe: "90 Days",
       rating: 5,
       text: `The step-by-step process is so clear that even my 60-year-old father could follow it. The AI tools do all the heavy lifting while I focus on strategy. This is the future of content creation!`,
-      videoThumbnail: "Images/proof4.webp",
+      videoThumbnail: "https://miro.medium.com/v2/resize:fit:1400/1*qc_6nwmPzM_ZMSzs34onOQ.jpeg",
       channelStats: {
         subscribers: "62.3K",
-        views: "3.1M",
-        videos: 18
+        views: "11.7M",
+        videos: 60
       }
     }
   ];
