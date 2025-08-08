@@ -82,15 +82,15 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="hero" className="relative min-h-screen bg-gradient-to-br from-primary/5 via-white to-secondary/5 flex items-center overflow-hidden">
-      {/* Background Pattern - Fixed positioning to prevent overflow */}
-      <div className="absolute inset-0 opacity-5 pointer-events-none">
-        <div className="absolute top-20 left-4 w-48 h-48 sm:w-72 sm:h-72 bg-primary rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-4 w-64 h-64 sm:w-96 sm:h-96 bg-secondary rounded-full blur-3xl"></div>
+    <section id="hero" className="relative min-h-screen w-full bg-gradient-to-br from-primary/5 via-white to-secondary/5 flex items-center overflow-hidden">
+      {/* Background Pattern - Properly constrained */}
+      <div className="absolute inset-0 opacity-5 pointer-events-none overflow-hidden">
+        <div className="absolute top-20 left-4 w-32 h-32 sm:w-48 sm:h-48 md:w-72 md:h-72 bg-primary rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 right-4 w-40 h-40 sm:w-64 sm:h-64 md:w-96 md:h-96 bg-secondary rounded-full blur-3xl"></div>
       </div>
 
-      {/* Real-time Notifications */}
-      <div className="fixed bottom-4 left-4 z-40 space-y-2 max-w-xs">
+      {/* Real-time Notifications - Hidden on mobile to prevent interference */}
+      <div className="hidden sm:block fixed bottom-4 left-4 z-40 space-y-2 max-w-xs">
         {notifications.map((notification) => (
           <div
             key={notification.id}
@@ -120,18 +120,18 @@ const HeroSection = () => {
         ))}
       </div>
 
-      <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
-        <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center">
+      <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-16 lg:py-20">
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 items-center w-full">
           {/* Left Content */}
-          <div className="text-center lg:text-left order-1 lg:order-1">
+          <div className="text-center lg:text-left order-1 lg:order-1 w-full">
             {/* Trust Badge */}
-            <div className="inline-flex items-center space-x-2 bg-success/10 text-success px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-medium mb-4 sm:mb-6 animate-fade-in max-w-full">
-              <Icon name="CheckCircle" size={14} className="sm:w-4 sm:h-4 flex-shrink-0" />
-              <span className="truncate">Trusted by {studentsCounter?.toLocaleString('en-IN')} successful students</span>
+            <div className="inline-flex items-center space-x-2 bg-success/10 text-success px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-medium mb-4 sm:mb-6 animate-fade-in w-auto max-w-full">
+              <Icon name="CheckCircle" size={14} className="w-3.5 h-3.5 sm:w-4 sm:h-4 flex-shrink-0" />
+              <span className="text-xs sm:text-sm truncate">Trusted by {studentsCounter?.toLocaleString('en-IN')} successful students</span>
             </div>
 
             {/* Enhanced Main Headline */}
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 mb-4 sm:mb-6 leading-tight animate-fade-in">
+            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-4 sm:mb-6 leading-tight animate-fade-in mobile-text">
               Build a{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
                 Profitable YouTube Channel
@@ -142,16 +142,16 @@ const HeroSection = () => {
             </h1>
 
             {/* Enhanced Subheadline */}
-            <p className="text-base sm:text-lg lg:text-xl text-gray-600 mb-6 sm:mb-8 leading-relaxed animate-fade-in">
-              Unlock the secret to automating your YouTube channel with AI and start earning passive income in just 30 days. 
+            <p className="text-sm sm:text-base lg:text-lg text-gray-600 mb-6 sm:mb-8 leading-relaxed animate-fade-in mobile-text">
+              Unlock the secret to automating your YouTube channel with AI and start earning passive income in just 30 days.
               No editing skills, no camera anxiety, no technical knowledge required.
             </p>
 
             {/* Enhanced Earnings Counter */}
-            <div className="bg-white rounded-xl shadow-card p-4 sm:p-6 mb-6 border border-gray-200 animate-slide-up max-w-full">
+            <div className="bg-white rounded-xl shadow-card p-4 sm:p-6 mb-6 border border-gray-200 animate-slide-up w-full">
               <div className="text-center">
                 <p className="text-xs sm:text-sm text-gray-600 mb-2">Potential Monthly Earnings</p>
-                <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-success">
+                <div className="text-lg sm:text-xl lg:text-2xl font-bold text-success">
                   ₹{earningsCounter?.toLocaleString('en-IN')}+
                 </div>
                 <p className="text-xs text-gray-500 mt-1">Based on student results</p>
@@ -159,58 +159,58 @@ const HeroSection = () => {
             </div>
 
             {/* Enhanced Key Benefits */}
-            <div className="space-y-3 mb-6 sm:mb-8">
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-3">
-                <div className="flex items-center space-x-2 text-xs sm:text-sm bg-white/50 rounded-lg p-2">
-                  <Icon name="Zap" size={14} className="text-accent flex-shrink-0 sm:w-4 sm:h-4" />
+            <div className="space-y-3 mb-6 sm:mb-8 w-full">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-3 w-full">
+                <div className="flex items-center space-x-2 text-xs sm:text-sm bg-white/50 rounded-lg p-2 w-full">
+                  <Icon name="Zap" size={12} className="text-accent flex-shrink-0 w-3 h-3 sm:w-4 sm:h-4" />
                   <span className="truncate">No editing skills required</span>
                 </div>
-                <div className="flex items-center space-x-2 text-xs sm:text-sm bg-white/50 rounded-lg p-2">
-                  <Icon name="Bot" size={14} className="text-accent flex-shrink-0 sm:w-4 sm:h-4" />
+                <div className="flex items-center space-x-2 text-xs sm:text-sm bg-white/50 rounded-lg p-2 w-full">
+                  <Icon name="Bot" size={12} className="text-accent flex-shrink-0 w-3 h-3 sm:w-4 sm:h-4" />
                   <span className="truncate">AI-powered automation</span>
                 </div>
-                <div className="flex items-center space-x-2 text-xs sm:text-sm bg-white/50 rounded-lg p-2">
-                  <Icon name="FileText" size={14} className="text-accent flex-shrink-0 sm:w-4 sm:h-4" />
+                <div className="flex items-center space-x-2 text-xs sm:text-sm bg-white/50 rounded-lg p-2 w-full">
+                  <Icon name="FileText" size={12} className="text-accent flex-shrink-0 w-3 h-3 sm:w-4 sm:h-4" />
                   <span className="truncate">Step-by-step blueprint</span>
                 </div>
-                <div className="flex items-center space-x-2 text-xs sm:text-sm bg-white/50 rounded-lg p-2">
-                  <Icon name="TrendingUp" size={14} className="text-accent flex-shrink-0 sm:w-4 sm:h-4" />
+                <div className="flex items-center space-x-2 text-xs sm:text-sm bg-white/50 rounded-lg p-2 w-full">
+                  <Icon name="TrendingUp" size={12} className="text-accent flex-shrink-0 w-3 h-3 sm:w-4 sm:h-4" />
                   <span className="truncate">Quick results in 30-60 days</span>
                 </div>
               </div>
             </div>
 
             {/* Enhanced Primary CTA */}
-            <div className="space-y-4 animate-fade-in">
+            <div className="space-y-4 animate-fade-in w-full">
               <Button
                 variant="default"
                 size="xl"
                 onClick={handleGetAccess}
-                className="w-full sm:w-auto bg-gradient-to-r from-accent to-warning hover:from-accent/90 hover:to-warning/90 text-white font-bold px-6 sm:px-8 lg:px-12 py-3 sm:py-4 text-base sm:text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+                className="w-full bg-gradient-to-r from-accent to-warning hover:from-accent/90 hover:to-warning/90 text-white font-bold px-4 sm:px-6 lg:px-8 py-3 sm:py-4 text-sm sm:text-base shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
                 iconName="ShoppingCart"
                 iconPosition="left"
               >
                 Start Your YouTube Journey Today!
               </Button>
-              
+
               {/* Enhanced Urgency Elements */}
-              <div className="space-y-3">
-                <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-2 sm:space-y-0 sm:space-x-4 text-xs sm:text-sm text-gray-600">
-                  <div className="flex items-center space-x-1">
-                    <Icon name="Clock" size={12} className="text-warning sm:w-3.5 sm:h-3.5" />
-                    <span>Limited-time offer: 50% OFF today only!</span>
+              <div className="space-y-3 w-full">
+                <div className="flex flex-col items-center justify-center lg:justify-start space-y-2 text-xs sm:text-sm text-gray-600">
+                  <div className="flex items-center space-x-1 text-center">
+                    <Icon name="Clock" size={12} className="text-warning w-3 h-3 sm:w-3.5 sm:h-3.5 flex-shrink-0" />
+                    <span className="mobile-text">Limited-time offer: 50% OFF today only!</span>
                   </div>
-                  <div className="flex items-center space-x-1">
-                    <Icon name="Shield" size={12} className="text-success sm:w-3.5 sm:h-3.5" />
-                    <span>30-day money-back guarantee</span>
+                  <div className="flex items-center space-x-1 text-center">
+                    <Icon name="Shield" size={12} className="text-success w-3 h-3 sm:w-3.5 sm:h-3.5 flex-shrink-0" />
+                    <span className="mobile-text">30-day money-back guarantee</span>
                   </div>
                 </div>
-                
+
                 {/* Scarcity Indicator */}
-                <div className="bg-red-50 border border-red-200 rounded-lg p-3 text-center">
+                <div className="bg-red-50 border border-red-200 rounded-lg p-3 text-center w-full">
                   <div className="flex items-center justify-center space-x-2 text-red-700 text-xs sm:text-sm font-medium">
-                    <Icon name="AlertTriangle" size={14} className="sm:w-4 sm:h-4" />
-                    <span>Only 47 spots available – Secure your copy now!</span>
+                    <Icon name="AlertTriangle" size={12} className="w-3 h-3 sm:w-4 sm:h-4 flex-shrink-0" />
+                    <span className="mobile-text">Only 47 spots available – Secure your copy now!</span>
                   </div>
                 </div>
               </div>
@@ -218,15 +218,15 @@ const HeroSection = () => {
           </div>
 
           {/* Right Content - Enhanced Social Proof */}
-          <div className="space-y-4 sm:space-y-6 order-2 lg:order-2">
+          <div className="space-y-4 sm:space-y-6 order-2 lg:order-2 w-full">
             {/* Enhanced Success Metrics */}
-            <div className="grid grid-cols-2 gap-3 sm:gap-4">
-              <div className="bg-white rounded-xl shadow-card p-3 sm:p-4 border border-gray-200 text-center hover:shadow-lg transition-shadow duration-300">
-                <div className="text-lg sm:text-xl lg:text-2xl font-bold text-primary mb-1">97%</div>
+            <div className="grid grid-cols-2 gap-3 sm:gap-4 w-full">
+              <div className="bg-white rounded-xl shadow-card p-3 sm:p-4 border border-gray-200 text-center hover:shadow-lg transition-shadow duration-300 w-full">
+                <div className="text-base sm:text-lg lg:text-xl font-bold text-primary mb-1">97%</div>
                 <div className="text-xs sm:text-sm text-gray-600">Success Rate</div>
               </div>
-              <div className="bg-white rounded-xl shadow-card p-3 sm:p-4 border border-gray-200 text-center hover:shadow-lg transition-shadow duration-300">
-                <div className="text-lg sm:text-xl lg:text-2xl font-bold text-secondary mb-1">30</div>
+              <div className="bg-white rounded-xl shadow-card p-3 sm:p-4 border border-gray-200 text-center hover:shadow-lg transition-shadow duration-300 w-full">
+                <div className="text-base sm:text-lg lg:text-xl font-bold text-secondary mb-1">30</div>
                 <div className="text-xs sm:text-sm text-gray-600">Days to Profit</div>
               </div>
             </div>
@@ -259,8 +259,8 @@ const HeroSection = () => {
       </div>
       
       {/* Scroll Indicator */}
-      <div className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce-subtle">
-        <Icon name="ChevronDown" size={16} className="text-gray-400 sm:w-6 sm:h-6" />
+      <div className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce-subtle z-10">
+        <Icon name="ChevronDown" size={16} className="text-gray-400 w-5 h-5 sm:w-6 sm:h-6" />
       </div>
     </section>
   );
