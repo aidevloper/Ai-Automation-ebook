@@ -82,15 +82,15 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="hero" className="relative min-h-screen bg-gradient-to-br from-primary/5 via-white to-secondary/5 flex items-center overflow-hidden">
-      {/* Background Pattern - Fixed positioning to prevent overflow */}
-      <div className="absolute inset-0 opacity-5 pointer-events-none">
-        <div className="absolute top-20 left-4 w-48 h-48 sm:w-72 sm:h-72 bg-primary rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-4 w-64 h-64 sm:w-96 sm:h-96 bg-secondary rounded-full blur-3xl"></div>
+    <section id="hero" className="relative min-h-screen w-full bg-gradient-to-br from-primary/5 via-white to-secondary/5 flex items-center overflow-hidden">
+      {/* Background Pattern - Properly constrained */}
+      <div className="absolute inset-0 opacity-5 pointer-events-none overflow-hidden">
+        <div className="absolute top-20 left-4 w-32 h-32 sm:w-48 sm:h-48 md:w-72 md:h-72 bg-primary rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 right-4 w-40 h-40 sm:w-64 sm:h-64 md:w-96 md:h-96 bg-secondary rounded-full blur-3xl"></div>
       </div>
 
-      {/* Real-time Notifications */}
-      <div className="fixed bottom-4 left-4 z-40 space-y-2 max-w-xs">
+      {/* Real-time Notifications - Hidden on mobile to prevent interference */}
+      <div className="hidden sm:block fixed bottom-4 left-4 z-40 space-y-2 max-w-xs">
         {notifications.map((notification) => (
           <div
             key={notification.id}
@@ -120,8 +120,8 @@ const HeroSection = () => {
         ))}
       </div>
 
-      <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
-        <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center">
+      <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-16 lg:py-20">
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 items-center w-full">
           {/* Left Content */}
           <div className="text-center lg:text-left order-1 lg:order-1">
             {/* Trust Badge */}
