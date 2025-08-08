@@ -17,45 +17,80 @@
     html, body {
       overflow-x: hidden;
       position: relative;
+      width: 100%;
+      max-width: 100vw;
     }
-    
+
     /* Ensure all sections respect mobile viewport */
     section {
       width: 100%;
       max-width: 100vw;
       overflow-x: hidden;
+      position: relative;
+      margin: 0;
+      padding-left: 0;
+      padding-right: 0;
     }
-    
+
     /* Fix grid layouts on mobile */
     .grid {
       width: 100%;
       max-width: 100vw;
+      overflow-x: hidden;
     }
-    
+
     /* Fix all containers */
     .container, .max-w-7xl, .max-w-4xl, .max-w-3xl {
       width: 100%;
       max-width: 100vw;
       padding-left: 1rem;
       padding-right: 1rem;
+      margin-left: 0;
+      margin-right: 0;
     }
-    
+
     /* Fix text overflow */
     h1, h2, h3, h4, h5, h6, p, span, div {
       word-wrap: break-word;
       overflow-wrap: break-word;
+      max-width: 100%;
     }
-    
+
     /* Fix images */
     img {
       max-width: 100%;
       height: auto;
     }
-    
+
     /* Fix buttons and CTAs */
     button, .btn {
       max-width: 100%;
       white-space: normal;
+      overflow: hidden;
+    }
+
+    /* Prevent horizontal scroll from transforms */
+    * {
+      transform-origin: center center;
+    }
+
+    /* Fix hero section specifically */
+    #hero {
+      width: 100vw;
+      max-width: 100vw;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* Fix hero content */
+    #hero .max-w-7xl {
+      width: 100%;
+      max-width: 100vw;
+      margin: 0;
+      padding-left: 1rem;
+      padding-right: 1rem;
     }
   }
   
