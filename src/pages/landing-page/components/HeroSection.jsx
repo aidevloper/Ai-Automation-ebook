@@ -148,10 +148,10 @@ const HeroSection = () => {
             </p>
 
             {/* Enhanced Earnings Counter */}
-            <div className="bg-white rounded-xl shadow-card p-4 sm:p-6 mb-6 border border-gray-200 animate-slide-up max-w-full">
+            <div className="bg-white rounded-xl shadow-card p-4 sm:p-6 mb-6 border border-gray-200 animate-slide-up w-full">
               <div className="text-center">
                 <p className="text-xs sm:text-sm text-gray-600 mb-2">Potential Monthly Earnings</p>
-                <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-success">
+                <div className="text-lg sm:text-xl lg:text-2xl font-bold text-success">
                   ₹{earningsCounter?.toLocaleString('en-IN')}+
                 </div>
                 <p className="text-xs text-gray-500 mt-1">Based on student results</p>
@@ -159,22 +159,22 @@ const HeroSection = () => {
             </div>
 
             {/* Enhanced Key Benefits */}
-            <div className="space-y-3 mb-6 sm:mb-8">
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-3">
-                <div className="flex items-center space-x-2 text-xs sm:text-sm bg-white/50 rounded-lg p-2">
-                  <Icon name="Zap" size={14} className="text-accent flex-shrink-0 sm:w-4 sm:h-4" />
+            <div className="space-y-3 mb-6 sm:mb-8 w-full">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-3 w-full">
+                <div className="flex items-center space-x-2 text-xs sm:text-sm bg-white/50 rounded-lg p-2 w-full">
+                  <Icon name="Zap" size={12} className="text-accent flex-shrink-0 w-3 h-3 sm:w-4 sm:h-4" />
                   <span className="truncate">No editing skills required</span>
                 </div>
-                <div className="flex items-center space-x-2 text-xs sm:text-sm bg-white/50 rounded-lg p-2">
-                  <Icon name="Bot" size={14} className="text-accent flex-shrink-0 sm:w-4 sm:h-4" />
+                <div className="flex items-center space-x-2 text-xs sm:text-sm bg-white/50 rounded-lg p-2 w-full">
+                  <Icon name="Bot" size={12} className="text-accent flex-shrink-0 w-3 h-3 sm:w-4 sm:h-4" />
                   <span className="truncate">AI-powered automation</span>
                 </div>
-                <div className="flex items-center space-x-2 text-xs sm:text-sm bg-white/50 rounded-lg p-2">
-                  <Icon name="FileText" size={14} className="text-accent flex-shrink-0 sm:w-4 sm:h-4" />
+                <div className="flex items-center space-x-2 text-xs sm:text-sm bg-white/50 rounded-lg p-2 w-full">
+                  <Icon name="FileText" size={12} className="text-accent flex-shrink-0 w-3 h-3 sm:w-4 sm:h-4" />
                   <span className="truncate">Step-by-step blueprint</span>
                 </div>
-                <div className="flex items-center space-x-2 text-xs sm:text-sm bg-white/50 rounded-lg p-2">
-                  <Icon name="TrendingUp" size={14} className="text-accent flex-shrink-0 sm:w-4 sm:h-4" />
+                <div className="flex items-center space-x-2 text-xs sm:text-sm bg-white/50 rounded-lg p-2 w-full">
+                  <Icon name="TrendingUp" size={12} className="text-accent flex-shrink-0 w-3 h-3 sm:w-4 sm:h-4" />
                   <span className="truncate">Quick results in 30-60 days</span>
                 </div>
               </div>
