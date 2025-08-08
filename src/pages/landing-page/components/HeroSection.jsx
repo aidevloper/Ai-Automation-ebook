@@ -259,8 +259,8 @@ const HeroSection = () => {
       </div>
       
       {/* Scroll Indicator */}
-      <div className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce-subtle">
-        <Icon name="ChevronDown" size={16} className="text-gray-400 sm:w-6 sm:h-6" />
+      <div className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce-subtle z-10">
+        <Icon name="ChevronDown" size={16} className="text-gray-400 w-5 h-5 sm:w-6 sm:h-6" />
       </div>
     </section>
   );
