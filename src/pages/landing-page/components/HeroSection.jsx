@@ -181,36 +181,36 @@ const HeroSection = () => {
             </div>
 
             {/* Enhanced Primary CTA */}
-            <div className="space-y-4 animate-fade-in">
+            <div className="space-y-4 animate-fade-in w-full">
               <Button
                 variant="default"
                 size="xl"
                 onClick={handleGetAccess}
-                className="w-full sm:w-auto bg-gradient-to-r from-accent to-warning hover:from-accent/90 hover:to-warning/90 text-white font-bold px-6 sm:px-8 lg:px-12 py-3 sm:py-4 text-base sm:text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+                className="w-full bg-gradient-to-r from-accent to-warning hover:from-accent/90 hover:to-warning/90 text-white font-bold px-4 sm:px-6 lg:px-8 py-3 sm:py-4 text-sm sm:text-base shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
                 iconName="ShoppingCart"
                 iconPosition="left"
               >
                 Start Your YouTube Journey Today!
               </Button>
-              
+
               {/* Enhanced Urgency Elements */}
-              <div className="space-y-3">
-                <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-2 sm:space-y-0 sm:space-x-4 text-xs sm:text-sm text-gray-600">
-                  <div className="flex items-center space-x-1">
-                    <Icon name="Clock" size={12} className="text-warning sm:w-3.5 sm:h-3.5" />
-                    <span>Limited-time offer: 50% OFF today only!</span>
+              <div className="space-y-3 w-full">
+                <div className="flex flex-col items-center justify-center lg:justify-start space-y-2 text-xs sm:text-sm text-gray-600">
+                  <div className="flex items-center space-x-1 text-center">
+                    <Icon name="Clock" size={12} className="text-warning w-3 h-3 sm:w-3.5 sm:h-3.5 flex-shrink-0" />
+                    <span className="mobile-text">Limited-time offer: 50% OFF today only!</span>
                   </div>
-                  <div className="flex items-center space-x-1">
-                    <Icon name="Shield" size={12} className="text-success sm:w-3.5 sm:h-3.5" />
-                    <span>30-day money-back guarantee</span>
+                  <div className="flex items-center space-x-1 text-center">
+                    <Icon name="Shield" size={12} className="text-success w-3 h-3 sm:w-3.5 sm:h-3.5 flex-shrink-0" />
+                    <span className="mobile-text">30-day money-back guarantee</span>
                   </div>
                 </div>
-                
+
                 {/* Scarcity Indicator */}
-                <div className="bg-red-50 border border-red-200 rounded-lg p-3 text-center">
+                <div className="bg-red-50 border border-red-200 rounded-lg p-3 text-center w-full">
                   <div className="flex items-center justify-center space-x-2 text-red-700 text-xs sm:text-sm font-medium">
-                    <Icon name="AlertTriangle" size={14} className="sm:w-4 sm:h-4" />
-                    <span>Only 47 spots available – Secure your copy now!</span>
+                    <Icon name="AlertTriangle" size={12} className="w-3 h-3 sm:w-4 sm:h-4 flex-shrink-0" />
+                    <span className="mobile-text">Only 47 spots available – Secure your copy now!</span>
                   </div>
                 </div>
               </div>
