@@ -12,7 +12,7 @@ import FinalCTASection from './components/FinalCTASection';
 import AnchorNavigation from '../../components/ui/AnchorNavigation';
 import StickyPurchaseCTA from '../../components/ui/StickyPurchaseCTA';
 import ProgressIndicator from '../../components/ui/ProgressIndicator';
-import ExitIntentOverlay from '../../components/ui/ExitIntentOverlay';
+
 
 const LandingPage = () => {
   // Analytics tracking
@@ -116,9 +116,6 @@ const LandingPage = () => {
         
         {/* Sticky Elements */}
         <StickyPurchaseCTA />
-        
-        {/* Exit Intent Overlay */}
-        <ExitIntentOverlay />
       </div>
     </>
   );
