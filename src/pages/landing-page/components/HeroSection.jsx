@@ -218,15 +218,15 @@ const HeroSection = () => {
           </div>
 
           {/* Right Content - Enhanced Social Proof */}
-          <div className="space-y-4 sm:space-y-6 order-2 lg:order-2">
+          <div className="space-y-4 sm:space-y-6 order-2 lg:order-2 w-full">
             {/* Enhanced Success Metrics */}
-            <div className="grid grid-cols-2 gap-3 sm:gap-4">
-              <div className="bg-white rounded-xl shadow-card p-3 sm:p-4 border border-gray-200 text-center hover:shadow-lg transition-shadow duration-300">
-                <div className="text-lg sm:text-xl lg:text-2xl font-bold text-primary mb-1">97%</div>
+            <div className="grid grid-cols-2 gap-3 sm:gap-4 w-full">
+              <div className="bg-white rounded-xl shadow-card p-3 sm:p-4 border border-gray-200 text-center hover:shadow-lg transition-shadow duration-300 w-full">
+                <div className="text-base sm:text-lg lg:text-xl font-bold text-primary mb-1">97%</div>
                 <div className="text-xs sm:text-sm text-gray-600">Success Rate</div>
               </div>
-              <div className="bg-white rounded-xl shadow-card p-3 sm:p-4 border border-gray-200 text-center hover:shadow-lg transition-shadow duration-300">
-                <div className="text-lg sm:text-xl lg:text-2xl font-bold text-secondary mb-1">30</div>
+              <div className="bg-white rounded-xl shadow-card p-3 sm:p-4 border border-gray-200 text-center hover:shadow-lg transition-shadow duration-300 w-full">
+                <div className="text-base sm:text-lg lg:text-xl font-bold text-secondary mb-1">30</div>
                 <div className="text-xs sm:text-sm text-gray-600">Days to Profit</div>
               </div>
             </div>
