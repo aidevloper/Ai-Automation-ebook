@@ -236,7 +236,7 @@ const HeroSection = () => {
               <div className="aspect-square bg-gray-100 rounded-lg mb-4 relative overflow-hidden">
                 {/* Removing the rotating border animation */}
                 <img 
-                  src="/Images/youtube.jpg"
+                  src="https://i.etsystatic.com/42677351/r/il/bb4b32/6887057623/il_1588xN.6887057623_gc34.jpg"
                   alt="Success story testimonial"
                   className="w-full h-full object-contain relative z-10 rounded-lg"
                   loading="lazy"
