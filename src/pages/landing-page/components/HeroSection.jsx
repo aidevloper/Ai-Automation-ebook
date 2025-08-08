@@ -123,15 +123,15 @@ const HeroSection = () => {
       <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-16 lg:py-20">
         <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 items-center w-full">
           {/* Left Content */}
-          <div className="text-center lg:text-left order-1 lg:order-1">
+          <div className="text-center lg:text-left order-1 lg:order-1 w-full">
             {/* Trust Badge */}
-            <div className="inline-flex items-center space-x-2 bg-success/10 text-success px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-medium mb-4 sm:mb-6 animate-fade-in max-w-full">
-              <Icon name="CheckCircle" size={14} className="sm:w-4 sm:h-4 flex-shrink-0" />
-              <span className="truncate">Trusted by {studentsCounter?.toLocaleString('en-IN')} successful students</span>
+            <div className="inline-flex items-center space-x-2 bg-success/10 text-success px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-medium mb-4 sm:mb-6 animate-fade-in w-auto max-w-full">
+              <Icon name="CheckCircle" size={14} className="w-3.5 h-3.5 sm:w-4 sm:h-4 flex-shrink-0" />
+              <span className="text-xs sm:text-sm truncate">Trusted by {studentsCounter?.toLocaleString('en-IN')} successful students</span>
             </div>
 
             {/* Enhanced Main Headline */}
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 mb-4 sm:mb-6 leading-tight animate-fade-in">
+            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-4 sm:mb-6 leading-tight animate-fade-in mobile-text">
               Build a{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
                 Profitable YouTube Channel
@@ -142,8 +142,8 @@ const HeroSection = () => {
             </h1>
 
             {/* Enhanced Subheadline */}
-            <p className="text-base sm:text-lg lg:text-xl text-gray-600 mb-6 sm:mb-8 leading-relaxed animate-fade-in">
-              Unlock the secret to automating your YouTube channel with AI and start earning passive income in just 30 days. 
+            <p className="text-sm sm:text-base lg:text-lg text-gray-600 mb-6 sm:mb-8 leading-relaxed animate-fade-in mobile-text">
+              Unlock the secret to automating your YouTube channel with AI and start earning passive income in just 30 days.
               No editing skills, no camera anxiety, no technical knowledge required.
             </p>
 
