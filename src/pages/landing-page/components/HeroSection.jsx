@@ -249,9 +249,9 @@ const HeroSection = () => {
               </div>
               <div className="text-center">
                 <p className="text-xs sm:text-sm text-gray-600 mb-2">
-                  "I made ₹50,000 in my first 45 days using this ebook!"
+                  "I made ₹1,00,000 in my first 45 days using this ebook!"
                 </p>
-                <p className="text-xs text-gray-500">- Rajesh Kumar, Delhi</p>
+                <p className="text-xs text-gray-500">- Namita Kumari, Mumbai</p>
               </div>
             </div>
           </div>
