@@ -46,8 +46,8 @@ const PricingSection = () => {
     {
       id: 'basic',
       name: 'eBook Only',
-      originalPrice: 1499,
-      currentPrice: 499,
+      originalPrice: 999,
+      currentPrice: 297,
       savings: 1000,
       popular: false,
       features: [
@@ -77,7 +77,7 @@ const PricingSection = () => {
       window.fbq('track', 'InitiateCheckout', {
         content_name: `YouTube Automation eBook - ${packageId}`,
         content_category: 'eBook',
-        value: 499,
+        value: 297,
         currency: 'INR'
       });
     }
