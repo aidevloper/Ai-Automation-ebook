@@ -60,7 +60,7 @@ const StickyPurchaseCTA = () => {
       window.fbq('track', 'InitiateCheckout', {
         content_name: 'YouTube Automation eBook - Sticky CTA',
         content_category: 'eBook',
-        value: 499,
+        value: 297,
         currency: 'INR'
       });
     }
@@ -78,8 +78,8 @@ const StickyPurchaseCTA = () => {
           <div className="flex items-center space-x-4">
             <div className="text-center sm:text-left">
               <div className="flex items-center space-x-2">
-                <span className="text-lg font-bold text-gray-900">₹499</span>
-                <span className="text-sm text-gray-500 line-through">₹1499</span>
+                <span className="text-lg font-bold text-gray-900">₹297</span>
+                <span className="text-sm text-gray-500 line-through">₹999</span>
                 <span className="bg-warning text-warning-foreground px-2 py-1 rounded text-xs font-semibold">
                   66% OFF
                 </span>
