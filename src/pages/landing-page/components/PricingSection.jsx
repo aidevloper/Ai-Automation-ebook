@@ -48,7 +48,7 @@ const PricingSection = () => {
       name: 'eBook Only',
       originalPrice: 999,
       currentPrice: 297,
-      savings: 1000,
+      savings: 702,
       popular: false,
       features: [
         '200+ Page Comprehensive eBook',
