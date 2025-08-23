@@ -256,7 +256,7 @@ const FinalCTASection = () => {
               <div className="bg-success/10 rounded-lg p-6">
                 <div className="text-4xl font-bold text-success mb-2">₹297</div>
                 <div className="text-lg text-gray-500 line-through mb-2">₹999</div>
-                <div className="text-success font-semibold mb-4">Save ₹1000 (66% OFF)</div>
+                <div className="text-success font-semibold mb-4">Save ₹702 (66% OFF)</div>
                 <div className="text-sm text-gray-600">
                   Regular price returns in:
                 </div>
